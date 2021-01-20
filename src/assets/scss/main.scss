@@ -1,0 +1,54 @@
+@import './normalize.scss';
+@import '../../components/header/search-bar/render-search-bar.scss';
+@import '../../components/header/language-select/language-select.scss';
+@import '../../components/header/temperature-type-select/temperature-type-select.scss';
+@import '../../components/weather-block/weather-info/city-and-date/city-and-date.scss';
+@import '../../components/weather-block/weather-info/overcast/overcast.scss';
+@import '../../components/weather-block/weather-info/temperature/temperature.scss';
+@import '../../components/weather-block/weather-info/three-days-forecast/three-days-forecast.scss';
+@import '../../components/weather-block/map/map-position/map-position.scss';
+@import '../../components/weather-block/map/mapboxgl/mapboxgl.scss';
+@import '../../components/loading/loading.scss';
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+}
+
+.page-wrapper {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: white;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.page-inner-wrapper {
+  padding: 20px 40px 40px 40px;
+  opacity: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &--margin {
+    margin-bottom: 60px;
+  }
+}
+
+.header__left-wrapper {
+  display: flex;
+  align-items: space-between;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

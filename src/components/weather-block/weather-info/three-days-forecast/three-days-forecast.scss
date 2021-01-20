@@ -1,0 +1,17 @@
+.three-days-forecast {
+    display: flex;
+    font-size: 20px;
+}
+
+.day {
+
+    &--margin {
+        margin-right: 20px;
+    }
+
+    &__temperature-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-left: 5px;
+    }
+}
